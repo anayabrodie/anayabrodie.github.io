@@ -9,17 +9,20 @@ body {
 
 main {
     margin: 0 2em;
-    display: flex;
-    flex: 1;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    justify-content: center;
+    text-align: center;
+
 }
 main div {
-    width: 33.3%;
+    width: 100%;
     font-size: 70px;
-    text-align: center;
     line-height: 2.2em;
 }
 main img {
     width: 100%;
+    font-size: 0px;
     height:initial;
-    object-fit: contain;
+    object-fit:inherit;
 }

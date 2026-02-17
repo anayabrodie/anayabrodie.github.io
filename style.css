@@ -1,3 +1,4 @@
+/* ------------------Body------------------ */
 body {
     margin: 0 auto;
     padding: 0;
@@ -6,20 +7,117 @@ body {
 
     background-color: rgb(253, 253, 150);
 }
+a {
+    text-decoration: none;
+}
 
+/* ------------------Font Classes------------------ */
+.black-text {
+    color: black;
+}
+.libre-baskerville {
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.fira-sans-regular {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.fira-sans-medium {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.fira-sans-semibold {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.fira-sans-regular-italic {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+/* ------------------Navigation Bar------------------ */
+.navbar {
+    max-width: 100%;
+    margin: 1.2em 2em 1em 2em;
+    display: flex;
+    flex-direction: row;
+}
+.navbar a {
+    height: fit-content;
+    display: inline;
+}
+.navbar a img {
+    height: 3em;
+    display: inline;
+    /* width: 3em; */
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.nav {
+    margin-left: auto;
+    line-height: 3em;
+    border-bottom: 1px black solid;
+}
+.option {
+    display: inline;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    font-weight: normal;
+}
+
+
+
+/* ------------------Footer------------------ */
+footer {
+    display: flex;
+    margin-top: 1em;
+    padding: 1.5em 1em 1em 1em;
+    border-top: 1px black solid;
+    flex-direction: row;
+}
+footer p {
+    font-size: 18px;
+    margin-left: 2em;
+    line-height: 1.25em;
+    color: rgba(0, 0, 0, 0.7);
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: auto;
+}
+.socials img {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+
+
+/* ------------------Home Page------------------ */
 main {
     margin: 0 2em;
-    display: flex;
-    flex: 1;
+    justify-content: center;
+    text-align: center;
+
 }
 main div {
-    width: 33.3%;
+    width: 100%;
     font-size: 70px;
-    text-align: center;
     line-height: 2.2em;
 }
 main img {
     width: 100%;
+    font-size: 0px;
     height:initial;
-    object-fit: contain;
+    object-fit:inherit;
 }

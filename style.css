@@ -7,6 +7,17 @@ body {
 
     background-color: rgb(253, 253, 150);
 }
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+h2 {
+    font-size: 70px;
+    margin: 0;
+}
+h5 {
+    font-size: 20px;
+}
 a {
     text-decoration: none;
 }
@@ -47,6 +58,9 @@ a {
 .navbar {
     max-width: 100%;
     margin: 1.2em 2em 1em 2em;
+    border: 2px solid;
+    border-radius: 100px;
+    background-color: white;
     display: flex;
     flex-direction: row;
 }
@@ -64,7 +78,6 @@ a {
 .nav {
     margin-left: auto;
     line-height: 3em;
-    border-bottom: 1px black solid;
 }
 .option {
     display: inline;
@@ -106,18 +119,27 @@ footer p {
 /* ------------------Home Page------------------ */
 main {
     margin: 0 2em;
+    position: relative;
     justify-content: center;
     text-align: center;
 
-}
-main div {
-    width: 100%;
-    font-size: 70px;
-    line-height: 2.2em;
 }
 main img {
     width: 100%;
     font-size: 0px;
     height:initial;
     object-fit:inherit;
+}
+#header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 60%;
+
+    margin-top: 15em;
+    line-height: 7em;
+    text-align: center;
 }

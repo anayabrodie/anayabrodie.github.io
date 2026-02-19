@@ -2,13 +2,19 @@ class MyNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="navbar fira-sans-medium">
-            <a href="index.html"><img src="images/signature.png"></a>
+            <!-- <a href="index.html"><img src="images/signature.png"></a> -->
             <nav class="nav">
                 <h5 class="option">
                     <a class="black-text" href="index.html">Home</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="portfolio.html">Portfolio</a>
+                    <a class="black-text" href="about.html">About Me</a>
+                </h5>
+                <h5 class="option">
+                    <a class="black-text" href="photos.html">Photos</a>
+                </h5>
+                <h5 class="option">
+                    <a class="black-text" href="media.html">Media</a>
                 </h5>
                 <h5 class="option">
                     <a class="black-text" href="resume.html">Resume</a>

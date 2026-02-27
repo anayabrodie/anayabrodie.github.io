@@ -5,7 +5,21 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color: rgb(253, 253, 150);
+    background-color: rgb(230, 230, 230);
+    /* background-color: rgb(253, 253, 150); */
+    /* background-color: rgb(252, 252, 100); */
+    /* background-color: rgb(150, 253, 202); */
+}
+h1 {
+    font-size: 90px;
+    margin: 0;
+}
+h2 {
+    font-size: 70px;
+    margin: 0;
+}
+h5 {
+    font-size: 24px;
 }
 a {
     text-decoration: none;
@@ -47,7 +61,11 @@ a {
 .navbar {
     max-width: 100%;
     margin: 1.2em 2em 1em 2em;
+    border: 0px solid;
+    border-radius: 100px;
+    background-color: white;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
 }
 .navbar a {
@@ -62,15 +80,23 @@ a {
     margin-left: 1vw;
 }
 .nav {
-    margin-left: auto;
+    /* margin-left: auto; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 2vw;
+    align-items: center;
     line-height: 3em;
-    border-bottom: 1px black solid;
 }
 .option {
-    display: inline;
-    margin-left: 2.5vw;
-    margin-right: 2.5vw;
     font-weight: normal;
+    margin: 0;
+}
+.option a {
+    padding: 0.25em 3em;
+    background-color: #FCFC64;
+    border: 1px solid black;
+    border-radius: 100px;
 }
 
 
@@ -106,18 +132,38 @@ footer p {
 /* ------------------Home Page------------------ */
 main {
     margin: 0 2em;
+    position: relative;
     justify-content: center;
     text-align: center;
 
-}
-main div {
-    width: 100%;
-    font-size: 70px;
-    line-height: 2.2em;
+    overflow-y: hidden;
+    /* border: 2px solid; */
+    border-radius: 100px;
+
 }
 main img {
     width: 100%;
     font-size: 0px;
-    height:initial;
     object-fit:inherit;
+    
+}
+#header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 60%;
+
+    line-height: 7em;
+    text-align: center;
+}
+#header {
+    margin-top: 22%;
+}
+#header h1, #header h2 {
+    color: #FCFC64;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }

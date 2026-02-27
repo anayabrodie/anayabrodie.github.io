@@ -1,11 +1,11 @@
 /* ------------------Body------------------ */
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
 
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(255, 255, 255);
     /* background-color: rgb(253, 253, 150); */
     /* background-color: rgb(252, 252, 100); */
     /* background-color: rgb(150, 253, 202); */
@@ -19,7 +19,7 @@ h2 {
     margin: 0;
 }
 h5 {
-    font-size: 24px;
+    font-size: 32px;
 }
 a {
     text-decoration: none;
@@ -60,7 +60,7 @@ a {
 /* ------------------Navigation Bar------------------ */
 .navbar {
     max-width: 100%;
-    margin: 1.2em 2em 1em 2em;
+    margin: 2em 2em 1em 2em;
     border: 0px solid;
     border-radius: 100px;
     background-color: white;
@@ -69,16 +69,11 @@ a {
     flex-direction: row;
 }
 .navbar a {
+    width: fit-content;
     height: fit-content;
     display: inline;
 }
-.navbar a img {
-    height: 3em;
-    display: inline;
-    /* width: 3em; */
-    margin-right: 1vw;
-    margin-left: 1vw;
-}
+
 .nav {
     /* margin-left: auto; */
     display: flex;
@@ -88,21 +83,33 @@ a {
     align-items: center;
     line-height: 3em;
 }
+.nav a img {
+    height: 4em;
+    display: inline;
+    /* width: 3em; */
+    /* margin-right: 1vw;
+    margin-left: 1vw; */
+}
 .option {
     font-weight: normal;
     margin: 0;
 }
 .option a {
     padding: 0.25em 3em;
-    background-color: #FCFC64;
-    border: 1px solid black;
     border-radius: 100px;
+}
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: auto;
 }
 
 
 
 /* ------------------Footer------------------ */
-footer {
+/* footer {
     display: flex;
     margin-top: 1em;
     padding: 1.5em 1em 1em 1em;
@@ -125,7 +132,7 @@ footer p {
 .socials img {
     margin-left: 1vw;
     margin-right: 1vw;
-}
+} */
 
 
 

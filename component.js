@@ -2,13 +2,13 @@ class MyNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="navbar fira-sans-medium">
-            <!-- <a href="index.html"><img src="images/signature.png"></a> -->
             <nav class="nav">
+                <a href="index.html"><img src="images/Anaya-Logo.png"></a>
                 <h5 class="option">
                     <a class="black-text" href="index.html">Home</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="about.html">About Me</a>
+                    <a class="black-text" href="about.html">About</a>
                 </h5>
                 <h5 class="option">
                     <a class="black-text" href="photos.html">Photos</a>
@@ -19,26 +19,30 @@ class MyNavbar extends HTMLElement {
                 <h5 class="option">
                     <a class="black-text" href="resume.html">Resume</a>
                 </h5>
+                <div class="socials">
+                    <a href="index.html" target="_blank"><img src="images/instagram-logo.png"></a>
+                    <a href="index.html" target="_blank"><img src="images/linkedin-logo.png"></a>
+                </div>
             </nav>
         </div>
         `
     }
 }
 
-class MyFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-        <footer>
-            <p class="black-text fira-sans-medium">Footer text</p>
-            <div class="socials">
-                <a href="index.html" target="_blank"><img src="images/instagram2.png"></a>
-                <a href="index.html" target="_blank"><img src="images/github.png"></a>
-                <a href="index.html" target="_blank"><img src="images/linkedin.png"></a>
-            </div>
-        </footer>
-        `
-    }
-}
+// class MyFooter extends HTMLElement {
+//     connectedCallback() {
+//         this.innerHTML = `
+//         <footer>
+//             <p class="black-text fira-sans-medium">Footer text</p>
+//             <div class="socials">
+//                 <a href="index.html" target="_blank"><img src="images/instagram2.png"></a>
+//                 <a href="index.html" target="_blank"><img src="images/github.png"></a>
+//                 <a href="index.html" target="_blank"><img src="images/linkedin.png"></a>
+//             </div>
+//         </footer>
+//         `
+//     }
+// }
 
 customElements.define("my-navbar", MyNavbar);
-customElements.define("my-footer", MyFooter);
+// customElements.define("my-footer", MyFooter);

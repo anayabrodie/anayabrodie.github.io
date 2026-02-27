@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(230, 230, 230);
     /* background-color: rgb(253, 253, 150); */
     /* background-color: rgb(252, 252, 100); */
     /* background-color: rgb(150, 253, 202); */
@@ -61,7 +61,7 @@ a {
 .navbar {
     max-width: 100%;
     margin: 1.2em 2em 1em 2em;
-    border: 2px solid;
+    border: 0px solid;
     border-radius: 100px;
     background-color: white;
     display: flex;

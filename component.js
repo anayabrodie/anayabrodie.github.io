@@ -2,8 +2,9 @@ class MyNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="navbar fira-sans-medium">
+            <a class="logo" href="index.html"><img src="images/Anaya-Logo.png"></a>
             <nav class="nav">
-                <a href="index.html"><img src="images/Anaya-Logo.png"></a>
+                
                 <h5 class="option">
                     <a class="black-text" href="index.html">Home</a>
                 </h5>
@@ -19,11 +20,11 @@ class MyNavbar extends HTMLElement {
                 <h5 class="option">
                     <a class="black-text" href="resume.html">Resume</a>
                 </h5>
-                <div class="socials">
-                    <a href="index.html" target="_blank"><img src="images/instagram-logo.png"></a>
-                    <a href="index.html" target="_blank"><img src="images/linkedin-logo.png"></a>
-                </div>
             </nav>
+            <div class="socials">
+                <a href="https://www.instagram.com/brodie_productions_/" target="_blank"><img src="images/instagram-logo.png"></a>
+                <a href="https://www.linkedin.com/in/anaya-brodie-672ba3261/" target="_blank"><img src="images/linkedin-logo.png"></a>
+            </div>
         </div>
         `
     }

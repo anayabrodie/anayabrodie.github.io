@@ -3,6 +3,12 @@ class MyNavbar extends HTMLElement {
         this.innerHTML = `
         <div class="navbar fira-sans-medium">
             <a class="logo" href="index.html"><img src="images/assets/Anaya-Logo.png"></a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-button">
+                MENU <span>▼</span>
+            </label>
+
             <nav class="nav">
                 
                 <h5 class="option">

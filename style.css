@@ -98,6 +98,70 @@ a {
     padding: 0 0.5em;
 }
 
+/* --------Navigation Bar - OPTIMIZED -------- */
+.nav-toggle, .nav-button {
+    display: none;
+}
+@media screen and (max-width: 1600px) {
+    .navbar {
+        padding: 0.75em 4em; 
+    }
+    .option a {
+        padding: 0.25em 3vw;
+        font-size: 26px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 0.75em 2em; 
+    }
+    .option a {
+        padding: 0.25em 2vw;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 850px) {
+    .navbar {
+        position: relative; 
+    }
+    .nav-button {
+        display: block;
+        font-size: 20px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        padding: 10px;
+        border-left: 1px solid rgba(0,0,0,0.1);
+        border-right: 1px solid rgba(0,0,0,0.1);
+    }
+    .nav {
+        display: none; 
+        flex-direction: column;
+        
+        position: absolute;
+        top: 100%;
+        left: 50%; /* Move the left edge to the center of the navbar */
+        transform: translateX(-61.5%);
+        width: 200px;
+        
+        background-color: white;
+        border: 1.5px solid rgba(0, 0, 0, 0.25);
+        z-index: 999;
+    }
+    .option a {
+        padding: 0.5em;
+        display: block;
+        text-align: center;
+        border-bottom: 1.5px solid rgba(0, 0, 0, 0.25);
+    }
+    .nav-toggle:checked ~ .nav {
+        display: flex;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    .logo img { height: 3em; }
+    .socials img { height: 2em; }
+}
 
 
 /* ------------------Footer------------------ */

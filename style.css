@@ -11,11 +11,11 @@ body {
     /* background-color: rgb(150, 253, 202); */
 }
 h1 {
-    font-size: 90px;
+    font-size: 180px;
     margin: 0;
 }
 h2 {
-    font-size: 70px;
+    font-size: 56px;
     margin: 0;
 }
 h5 {
@@ -55,17 +55,41 @@ a {
     font-style: italic;
 }
 
+.playfair-display-900 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.syne-700 {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
 
 
 /* ------------------Navigation Bar------------------ */
 .navbar {
     max-width: 100%;
-    margin: 1.5em 5em;
-    background-color: white;
+    margin: 0;
+    padding: 0.75em 5em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    background-color: white;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.25);
 }
 /* .navbar a {
     width: fit-content;
@@ -74,7 +98,7 @@ a {
 } */
 
 .logo img {
-    height: 4.5em;
+    height: 4.25em;
     display: block;
 }
 
@@ -99,6 +123,7 @@ a {
 .option a {
     padding: 0.25em 4.5vw;
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .socials {
@@ -142,18 +167,16 @@ footer p {
 
 
 /* ------------------Home Page------------------ */
-main {
-    margin: 0 2em;
+#home-main {
+    margin: 0;
+    /* border-top: 1px solid black; */
     position: relative;
     justify-content: center;
     text-align: center;
-
     overflow-y: hidden;
-    /* border: 2px solid; */
-    border-radius: 100px;
 
 }
-main img {
+#home-main img {
     width: 100%;
     font-size: 0px;
     object-fit:inherit;
@@ -166,16 +189,19 @@ main img {
     bottom: 0;
     right: 0;
     height: 100%;
-    width: 60%;
+    width: 100%;
+}
 
-    line-height: 7em;
-    text-align: center;
+#header h2 {
+    color: #1A2238;
+    margin-top: 12%;
+    margin-left: 10%;
+    letter-spacing: 1px;
+    text-align: left;
+    white-space: pre;
 }
-#header {
-    margin-top: 22%;
-}
-#header h1, #header h2 {
-    color: #FCFC64;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+#header h1 {
+    color: #1A2238;
+    letter-spacing: -3px;
+    -webkit-text-stroke: 1px #1A2238;
 }

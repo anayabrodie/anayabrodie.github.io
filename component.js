@@ -2,28 +2,28 @@ class MyNavbar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="navbar fira-sans-medium">
-            <a class="logo" href="index.html"><img src="images/Anaya-Logo.png"></a>
+            <a class="logo" href="index.html"><img src="images/assets/Anaya-Logo.png"></a>
             <nav class="nav">
                 
                 <h5 class="option">
-                    <a class="black-text" href="index.html">Home</a>
+                    <a class="black-text" href="index.html">HOME</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="about.html">About</a>
+                    <a class="black-text" href="about.html">ABOUT</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="photos.html">Photos</a>
+                    <a class="black-text" href="photos.html">PHOTOS</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="media.html">Media</a>
+                    <a class="black-text" href="media.html">MEDIA</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="resume.html">Resume</a>
+                    <a class="black-text" href="resume.html">RESUME</a>
                 </h5>
             </nav>
             <div class="socials">
-                <a href="https://www.instagram.com/brodie_productions_/" target="_blank"><img src="images/instagram-logo.png"></a>
-                <a href="https://www.linkedin.com/in/anaya-brodie-672ba3261/" target="_blank"><img src="images/linkedin-logo.png"></a>
+                <a href="https://www.instagram.com/brodie_productions_/" target="_blank"><img src="images/assets/instagram-logo.png"></a>
+                <a href="https://www.linkedin.com/in/anaya-brodie-672ba3261/" target="_blank"><img src="images/assets/linkedin-logo.png"></a>
             </div>
         </div>
         `

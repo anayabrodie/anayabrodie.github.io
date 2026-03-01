@@ -29,11 +29,6 @@ a {
 .black-text {
     color: black;
 }
-.libre-baskerville {
-    font-family: "Libre Baskerville", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
 .fira-sans-regular {
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
@@ -53,23 +48,6 @@ a {
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-style: italic;
-}
-
-.playfair-display-900 {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-}
-.abril-fatface-regular {
-  font-family: "Abril Fatface", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.archivo-black-regular {
-  font-family: "Archivo Black", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 .syne-700 {
   font-family: "Syne", sans-serif;
@@ -91,31 +69,16 @@ a {
     background-color: white;
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.25);
 }
-/* .navbar a {
-    width: fit-content;
-    height: fit-content;
-    display: inline;
-} */
-
 .logo img {
     height: 4.25em;
     display: block;
 }
-
 .nav {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
 }
-/* .nav a img {
-    height: 4em;
-    display: inline;
-    /* width: 3em;
-    /* margin-right: 1vw;
-    margin-left: 1vw;
-} */
-
 .option {
     font-weight: normal;
     margin: 0;
@@ -125,7 +88,6 @@ a {
     text-decoration: none;
     letter-spacing: 2px;
 }
-
 .socials {
     display: flex;
     flex-direction: row;

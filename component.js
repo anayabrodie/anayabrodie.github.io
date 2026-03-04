@@ -53,3 +53,17 @@ class MyNavbar extends HTMLElement {
 
 customElements.define("my-navbar", MyNavbar);
 // customElements.define("my-footer", MyFooter);
+
+window.addEventListener('load', () => {
+    const overlay = document.getElementById('fade-overlay');
+    
+    if (overlay) {
+        // Start the fade out
+        overlay.classList.add('fade-out');
+
+        // Remove the overlay from the layout once the transition is done
+        overlay.addEventListener('transitionend', () => {
+            overlay.style.display = 'none';
+        });
+    }
+});

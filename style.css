@@ -18,6 +18,10 @@ h2 {
     font-size: 40px;
     margin: 0;
 }
+h3 {
+    font-size: 64px;
+    margin: 0;
+}
 h5 {
     font-size: 30px;
 }
@@ -108,6 +112,11 @@ a {
     padding: 0.25em 4.5vw;
     text-decoration: none;
     letter-spacing: 2px;
+}
+.option a:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: #1A2238;
 }
 .socials {
     display: flex;
@@ -213,8 +222,8 @@ footer p {
 
 
 
-/* ------------------Home Page------------------ */
-#home-main {
+/* ------------------Main overlay------------------ */
+#fixed-main {
     margin: 0;
     /* border-top: 1px solid black; */
     position: relative;
@@ -239,6 +248,8 @@ footer p {
     width: 100%;
 }
 
+
+/* ------------------Home Page------------------ */
 #header h2 {
     margin-top: 18%;
     margin-left: 6%;
@@ -248,4 +259,15 @@ footer p {
 }
 #header h1 {
     letter-spacing: -3px;
+}
+
+
+/* ------------------Resume Page------------------ */
+#resume-main {
+    margin: 3em 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container {
+    padding: 0 7em 0 7em;
 }

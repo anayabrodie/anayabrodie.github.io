@@ -8,17 +8,33 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
     
     </head>
 
     <body>
+        <div id="fade-overlay"></div>
         <my-navbar></my-navbar>
 
+        <main id="resume-main">
+            <div class="container">
+                <h3 class="dark-navy-text fira-sans-semibold">Headshot</h3>
+                <div class="img-container">
+                    <img src="images/anaya-headshot-1.jpg" id="main-headshot" alt="Anaya Brodie Headshot">
+                </div>
+                <a href="images/anaya-headshot-1.jpg" download class="download-button dark-navy-text fira-sans-semibold">Download Headshot</a>
+            </div>
+            
+            <div class="container resume-scroll-container">
+                <h3 class="dark-navy-text fira-sans-semibold">Resume</h3>
+                <div class="scroll-wrapper">
+                    <img src="images/Anaya-Resume-Img.png" alt="Anaya Brodie Resume">
+                </div>
+                <a href="/Anaya_Brodie_Resume.pdf" download class="download-button dark-navy-text fira-sans-semibold">Download Resume</a>
+            </div>
+        </main>
 
-
-        <my-footer></my-footer>
         <script src="component.js"></script>
     </body>
 </html>

@@ -19,7 +19,7 @@ h2 {
     margin: 0;
 }
 h3 {
-    font-size: 64px;
+    font-size: 56px;
     margin: 0;
 }
 h5 {
@@ -194,7 +194,7 @@ a {
 }
 
 
-/* ------------------Main overlay------------------ */
+/* ------------------Home Page------------------ */
 #fixed-main {
     margin: 0;
     width: fit-content;
@@ -220,9 +220,6 @@ a {
     height: 100%;
     width: 100%;
 }
-
-
-/* ------------------Home Page------------------ */
 #header h2 {
     margin-top: 18%;
     margin-left: 6%;
@@ -237,22 +234,74 @@ a {
 
 /* ------------------Resume Page------------------ */
 #resume-main {
-    margin: 3em 0;
-    display: grid;
-    grid-template-columns: 50% 50%;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 9vw; /* Space between columns */
+    background: linear-gradient(135deg, #F9F9A3 0%, #F8F2F9 100%);
 }
 .container {
-    padding: 0 7em 0 7em;
-}
-.img-container {
-    position: relative;
-    margin: 3em auto 3em auto;
+    flex: 0 1 37.5vw;
+    min-width: 300px;
     display: flex;
-    width: 92%;
+    flex-direction: column;
+    align-items: center;
+}
+.img-container, .resume-scroll-container .scroll-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* This ensures the height always matches the width */
+    margin: 1em 0;
+    border: black 3px solid;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start; /* Keeps resume/image at the top */
+    background-color: white;
+    overflow: hidden; /* Standard for headshot */
 }
 .img-container img {
     display: block;
     width: 100%;
     height: auto;
-    border: black 3px solid;
+}
+.resume-scroll-container .scroll-wrapper {
+    overflow-y: scroll;
+}
+.scroll-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.scroll-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+.scroll-wrapper::-webkit-scrollbar-thumb {
+    background: #f2c1f8;
+    border-radius: 10px;
+}
+.download-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1a1c2c; 
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    border: 2px solid #1a1c2c;
+    cursor: pointer;
+}
+.download-button:hover {
+    background-color: #4a5568; 
+    border-color: #4a5568;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.download-button:active {
+    transform: translateY(0) scale(0.98);
 }

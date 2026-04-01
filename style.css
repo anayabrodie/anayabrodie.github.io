@@ -11,7 +11,7 @@ body {
     /* background-color: rgb(150, 253, 202); */
 }
 h1 {
-    font-size: 180px;
+    font-size: 140px;
     margin: 0;
 }
 h2 {
@@ -197,38 +197,42 @@ a {
 /* ------------------Home Page------------------ */
 #fixed-main {
     margin: 0;
-    width: fit-content;
-    /* border-top: 1px solid black; */
-    position: relative;
-    justify-content: center;
-    text-align: center;
-    overflow-y: hidden;
-
-}
-#home-main img {
     width: 100%;
-    font-size: 0px;
-    object-fit:inherit;
-    
+    position: relative;
+    overflow: hidden; 
+}
+#fixed-main img {
+    display: block;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    margin: 0;
 }
 #header-overlay {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
     width: 100%;
-}
-#header h2 {
-    margin-top: 18%;
-    margin-left: 6%;
-    letter-spacing: 1px;
-    text-align: left;
-    white-space: pre;
+    height: 100%;
+    pointer-events: none; 
+    z-index: 10;
 }
 #header h1 {
+    text-align: center;
     letter-spacing: -3px;
+    text-shadow: 
+        /* 4 diagonals */
+        -2px -2px 0 #c8c2b1,  2px -2px 0 #c8c2b1,
+        -2px  2px 0 #c8c2b1,  2px  2px 0 #c8c2b1,
+        /* 4 straights */
+        0px -2px 0 #c8c2b1,  0px  2px 0 #c8c2b1,
+        -2px  0px 0 #c8c2b1,  2px  0px 0 #c8c2b1;
+    margin: 0;
+}
+#header h2 {
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0 0 0 15%;
 }
 
 

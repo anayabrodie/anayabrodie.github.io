@@ -5,7 +5,8 @@ body {
     display: flex;
     flex-direction: column;
 
-    background-color: rgb(255, 255, 255);
+    background: linear-gradient(135deg, #c8c2b1 0%, #ffffff 100%);
+    background-attachment: fixed;
     /* background-color: rgb(253, 253, 150); */
     /* background-color: rgb(252, 252, 100); */
     /* background-color: rgb(150, 253, 202); */
@@ -91,7 +92,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    /* background-color: white; */
     border-bottom: 1.5px solid rgba(0, 0, 0, 0.25);
 }
 .logo img {
@@ -243,7 +244,7 @@ a {
     justify-content: center;
     align-items: flex-start;
     gap: 9vw; /* Space between columns */
-    background: linear-gradient(135deg, #F9F9A3 0%, #F8F2F9 100%);
+    /* background: linear-gradient(135deg, #F9F9A3 0%, #F8F2F9 100%); */
 }
 .container {
     flex: 0 1 37.5vw;

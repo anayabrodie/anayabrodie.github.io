@@ -213,13 +213,13 @@ a {
 .hero-image {
     display: block;
     width: auto;
-    height: 95vh;
+    height: 95.5vh;
     object-fit: contain;
     /* filter: drop-shadow(0 10px 30px rgba(0,0,0,0.1)); */
 }
 #header {
     position: absolute;
-    bottom: 10%; 
+    bottom: 20%; 
     width: 100%;
     text-align: center;
     z-index: 10;
@@ -236,11 +236,7 @@ a {
 #header h2 {
     margin-top: 0.2em;
     letter-spacing: 2px;
-    text-shadow: 
-        -1px -1px 0 white,
-        1px -1px 0 white,
-        -1px  1px 0 white,
-        1px  1px 0 white;
+    color: white;
 }
 
 

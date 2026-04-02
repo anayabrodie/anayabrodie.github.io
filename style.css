@@ -5,11 +5,8 @@ body {
     display: flex;
     flex-direction: column;
 
-    background: linear-gradient(135deg, #c8c2b1 0%, #ffffff 100%);
+    background: linear-gradient(145deg, #FFF9A3 0%, #FFFEF2 100%);
     background-attachment: fixed;
-    /* background-color: rgb(253, 253, 150); */
-    /* background-color: rgb(252, 252, 100); */
-    /* background-color: rgb(150, 253, 202); */
 }
 h1 {
     font-size: 140px;
@@ -49,11 +46,8 @@ a {
 
 
 /* ------------------Font Classes------------------ */
-.black-text {
-    color: black;
-}
-.dark-navy-text {
-    color: #1A2238;
+.navy-text {
+    color: #1A1C2C;
 }
 .fira-sans-regular {
     font-family: "Fira Sans", sans-serif;
@@ -92,11 +86,12 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: white; */
-    border-bottom: 1.5px solid rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 250, 220, 0.8); /* Semi-transparent pastel */
+    backdrop-filter: blur(10px); /* Modern "glass" effect */
+    border-bottom: 1px solid rgba(26, 28, 44, 0.1);
 }
 .logo img {
-    height: 4.25em;
+    height: 3.5em;
     display: block;
 }
 .nav {
@@ -113,11 +108,13 @@ a {
     padding: 0.25em 4.5vw;
     text-decoration: none;
     letter-spacing: 2px;
+    color: #1A1C2C;
+    font-weight: 500;
 }
 .option a:hover {
     text-decoration: underline;
     text-underline-offset: 8px;
-    color: #1A2238;
+    color: #565d91;
 }
 .socials {
     display: flex;
@@ -196,44 +193,54 @@ a {
 
 
 /* ------------------Home Page------------------ */
-#fixed-main {
-    margin: 0;
+#hero-layout {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 95vh; 
+    overflow: hidden;
+    
+}
+.hero-container {
     position: relative;
-    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* ADJUST THIS: This is the gap between your Navbar and the Image */
+    margin-top: 0; 
 }
-#fixed-main img {
+.hero-image {
     display: block;
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
-    margin: 0;
+    width: auto;
+    height: 95vh;
+    object-fit: contain;
+    /* filter: drop-shadow(0 10px 30px rgba(0,0,0,0.1)); */
 }
-#header-overlay {
+#header {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 10%; 
     width: 100%;
-    height: 100%;
-    pointer-events: none; 
+    text-align: center;
     z-index: 10;
 }
 #header h1 {
-    text-align: center;
-    letter-spacing: -3px;
-    text-shadow: 
-        /* 4 diagonals */
-        -2px -2px 0 #c8c2b1,  2px -2px 0 #c8c2b1,
-        -2px  2px 0 #c8c2b1,  2px  2px 0 #c8c2b1,
-        /* 4 straights */
-        0px -2px 0 #c8c2b1,  0px  2px 0 #c8c2b1,
-        -2px  0px 0 #c8c2b1,  2px  0px 0 #c8c2b1;
     margin: 0;
+    line-height: 0.9;
+    text-shadow: 
+        -2px -2px 0 white,
+        2px -2px 0 white,
+        -2px  2px 0 white,
+        2px  2px 0 white;
 }
 #header h2 {
-    letter-spacing: 1px;
-    text-align: left;
-    margin: 0 0 0 15%;
+    margin-top: 0.2em;
+    letter-spacing: 2px;
+    text-shadow: 
+        -1px -1px 0 white,
+        1px -1px 0 white,
+        -1px  1px 0 white,
+        1px  1px 0 white;
 }
 
 
@@ -257,11 +264,12 @@ a {
     width: 100%;
     aspect-ratio: 1 / 1; /* This ensures the height always matches the width */
     margin: 1em 0;
-    border: black 3px solid;
+    border: 2px solid #1A1C2C;
     box-sizing: border-box;
     display: flex;
     align-items: flex-start; /* Keeps resume/image at the top */
     background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     overflow: hidden; /* Standard for headshot */
 }
 .img-container img {
@@ -285,27 +293,21 @@ a {
     border-radius: 10px;
 }
 .download-button {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #1a1c2c; 
+    background-color: #E3A018; /* Rich Amber */
     color: white !important;
-    padding: 12px 25px;
+    border: none;
+    padding: 10px 22px;
     border-radius: 4px;
-    width: fit-content;
-    font-size: 0.85em;
-    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    transition: all 0.3s ease;
-    border: 2px solid #1a1c2c;
-    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    transition: 0.3s ease;
 }
+
 .download-button:hover {
-    background-color: #4a5568; 
-    border-color: #4a5568;
-    color: white !important;
+    background-color: #1A1C2C; /* Swaps to Navy on hover for a sharp look */
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(227, 160, 24, 0.3);
 }
 .download-button:active {
     transform: translateY(0) scale(0.98);

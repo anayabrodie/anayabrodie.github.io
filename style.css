@@ -347,3 +347,53 @@ a {
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
+
+
+/* ------------------About Page------------------ */
+.amain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5vw;
+    padding: 5vh 5vw;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+.about-visuals {
+    width: 100%;
+}
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #1A1C2C;
+    box-shadow: 20px 20px 0px #E3A018; 
+}
+.about-content {
+    text-align: left;
+}
+.about-content h1 {
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    margin-bottom: 0.5em;
+    border-bottom: 5px solid #E3A018;
+    width: fit-content;
+}
+.para {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #1A1C2C;
+    margin-bottom: 1.5rem;
+    max-width: 90%;
+}
+
+
+@media (max-width: 1024px) {
+    .amain {
+        grid-template-columns: 1fr; /* Switches to 1 column */
+        padding-top: 10vh;
+    }
+    .about-content {
+        margin-top: 3em;
+    }
+}

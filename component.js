@@ -12,19 +12,19 @@ class MyNavbar extends HTMLElement {
             <nav class="nav">
                 
                 <h5 class="option">
-                    <a class="black-text" href="index.html">HOME</a>
+                    <a href="index.html">HOME</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="about.html">ABOUT</a>
+                    <a href="about.html">ABOUT</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="photos.html">PHOTOS</a>
+                    <a href="photos.html">PHOTOS</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="media.html">MEDIA</a>
+                    <a href="media.html">MEDIA</a>
                 </h5>
                 <h5 class="option">
-                    <a class="black-text" href="resume.html">RESUME</a>
+                    <a href="resume.html">RESUME</a>
                 </h5>
             </nav>
             <div class="socials">

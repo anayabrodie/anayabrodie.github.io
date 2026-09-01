@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Anaya Brodie | Media</title>
+        <link rel="icon" href="images/assets/Anaya-Logo.png" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +18,61 @@
         <div id="fade-overlay"></div>
         <my-navbar></my-navbar>
 
+        <main class="media-main">
+            <h1 class="navy-text syne-700 media-heading">Media</h1>
 
+            <div class="video-row">
+                <div class="video-card">
+                    <div class="media-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/3AnkfzhcXMQ?si=oew_JAsGE3satict" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3 class="video-title fira-sans-semibold">Schaudenfreude</h3>
+                </div>
+
+                <div class="video-card">
+                    <div class="media-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/PMo3Z4SXB_U?si=NyLAC8R0WUMfhUyh" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3 class="video-title fira-sans-semibold">First Time In Forever</h3>
+                </div>
+            </div>
+
+            <div class="video-row">
+                <div class="video-card">
+                    <div class="media-wrapper">
+                        <video controls preload="metadata">
+                            <source src="videos/Part of Your World.mov" type="video/mp4">
+                            <source src="videos/Part of Your World.mov" type="video/quicktime">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3 class="video-title fira-sans-semibold">Part of Your World</h3>
+                </div>
+
+                <div class="video-card">
+                    <div class="media-wrapper">
+                        <video controls preload="metadata">
+                            <source src="videos/IMG_8136.mov" type="video/mp4">
+                            <source src="videos/IMG_8136.mov" type="video/quicktime">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h3 class="video-title fira-sans-semibold">Contemporary Upbeat Jazz Combination</h3>
+                </div>
+            </div>
+        </main>
 
         <my-footer></my-footer>
         <script src="component.js"></script>

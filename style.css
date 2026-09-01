@@ -397,3 +397,75 @@ a {
         margin-top: 3em;
     }
 }
+
+
+/* ------------------Photos Page------------------ */
+.media-main {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 5vh 5vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-heading {
+    font-size: clamp(3rem, 6vw, 5rem);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Row Container: Uses Grid for a 2-column layout */
+.video-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two side-by-side equal columns */
+    gap: 4vw;
+    width: 100%;
+    max-width: 1600px;
+    margin-bottom: 4rem; /* Space between YouTube row and .mov row */
+}
+
+.video-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Maintains a strict 16:9 widescreen ratio for videos */
+.media-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background-color: #000;
+    border: 2px solid #1A1C2C;
+    box-shadow: 12px 12px 0px #E3A018; /* Matching your Amber brand shadow */
+}
+
+.media-wrapper iframe,
+.media-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Titles beneath videos */
+.video-title {
+    margin-top: 1.2rem;
+    font-size: 1.25rem;
+    color: #1A1C2C;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive: Stacks videos vertically on smaller screens */
+@media (max-width: 900px) {
+    .video-row {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}

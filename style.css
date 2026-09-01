@@ -344,6 +344,27 @@ a {
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
+/* ------------------Photos Page - OPTIMIZED------------------ */
+.photos-heading {
+    display: none;
+}
+@media (max-width: 850px) {
+    #photo-main {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        margin: 0 2em;
+    }
+    .buffer-col {
+        display: none;
+    }
+    .photos-heading {
+        display: block;
+        font-size: clamp(3rem, 6vw, 5rem);
+        text-align: center;
+    }
+}
+
 
 
 /* ------------------Media Page------------------ */
